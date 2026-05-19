@@ -1,6 +1,6 @@
 # Tetris
 
-Playable version accessible [here](quinnquinnquinn.com/tetris). AI mode accessible [here](quinnquinnquinn.com/tetris/beta).
+Playable version accessible [here](https://quinnquinnquinn.com/tetris/). AI mode accessible [here](https://quinnquinnquinn.com/tetris/beta).
 
 ## Features
 
