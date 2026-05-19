@@ -151,25 +151,25 @@ br {
     width: 24vh;
 }
 .i {
-    background-color: #e6bc5a;
+    background-color: red;
 }
 .s {
-    background-color: #eb8f9e;
+    background-color: yellow;
 }
 .z {
-    background-color: #d98feb;
+    background-color: green;
 }
 .o {
-    background-color: #ffffb5;
+    background-color: blue;
 }
 .t {
-    background-color: #63ff83;
+    background-color: purple;
 }
 .j {
-    background-color: #a600ff;
+    background-color: orange;
 }
 .l {
-    background-color: #c0f0cd;
+    background-color: pink;
 }
 .preview {
     opacity: 50%;

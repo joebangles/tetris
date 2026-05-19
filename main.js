@@ -380,15 +380,21 @@ class Game {
     getPossible(type){
         let possibleMoves = []
 
+        // Example piece of same type
         let exPiece = new Piece(type)
         let contentFound = false;
+
+        // For each rotation
         for(let rot of Array(4).keys()){
             let realWidth = 0
-
+            
+            // Columns with Content
             let colsWithContent = []
+
             for(let col of Array(exPiece.bound.length).keys()){
                 let content = false
                 for(let row of Array(exPiece.bound.length).keys()){
+                    // If the piece has a block at that point
                     if(exPiece.bound[row][col]){
                         contentFound = true;
                         realWidth++
@@ -401,6 +407,9 @@ class Game {
                     colsWithContent[col] = false
                 }
             }
+
+            // Columns with content and real width are just 
+            // The actual size of the piece
             let leftHoles = 0
             let rightHoles = 0
             let rightLeft = false
@@ -417,8 +426,12 @@ class Game {
                     rightLeft = true
                 }
             }
+            // ^^ Figure out if the holes are on the right or left
+
             console.log(leftHoles + " " + rightHoles)
             console.log(realWidth)
+
+            
             for(let off of Array((11)-realWidth).keys()){
                 possibleMoves.push({h:off-leftHoles,t:type,r:rot})
             }
@@ -1003,4 +1016,3 @@ function settings(){
     document.getElementById("settings").classList.remove("invis")
     console.log("settings")
 }
-//penis
